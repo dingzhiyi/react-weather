@@ -28186,14 +28186,74 @@
 
 	var React = __webpack_require__(8);
 
+	var _require = __webpack_require__(179),
+	    Link = _require.Link;
+
 	var About = React.createClass({
 	  displayName: 'About',
 
 	  render: function render() {
 	    return React.createElement(
-	      'h4',
+	      'div',
 	      null,
-	      'About Components'
+	      React.createElement(
+	        'div',
+	        { className: 'text-center' },
+	        React.createElement(
+	          'h1',
+	          null,
+	          'About'
+	        )
+	      ),
+	      React.createElement(
+	        'div',
+	        { className: 'row' },
+	        React.createElement(
+	          'div',
+	          { className: 'small-centered' },
+	          React.createElement(
+	            'p',
+	            null,
+	            'This is a React Application I learned in a Udemy course about React development'
+	          ),
+	          React.createElement(
+	            'p',
+	            null,
+	            'Here are some resources I have used'
+	          ),
+	          React.createElement(
+	            'ul',
+	            null,
+	            React.createElement(
+	              'li',
+	              null,
+	              React.createElement(
+	                Link,
+	                { href: 'http://openweathermap.org/' },
+	                'openWeatherMap-Official Site'
+	              )
+	            ),
+	            React.createElement(
+	              'li',
+	              null,
+	              React.createElement(
+	                Link,
+	                { href: 'https://facebook.github.io/react/' },
+	                'Facebook React'
+	              )
+	            ),
+	            React.createElement(
+	              'li',
+	              null,
+	              React.createElement(
+	                Link,
+	                { href: 'https://github.com/dingzhiyi/react-weather' },
+	                'My GitHub Account'
+	              )
+	            )
+	          )
+	        )
+	      )
 	    );
 	  }
 	});
